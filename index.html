@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehreen Ahmed | AI Automation Engineer & LLM Developer</title>
+    <meta name="description"
+        content="AI Automation Engineer & LLM Application Developer. Building scalable AI workflows, internal assistants, and automation systems using LLMs, APIs, and orchestration tools.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">Mahreen <span class="dot">Ahmed</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#methodology">Methodology</a></li>
+                <li><a href="#contact" class="btn-outline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero container">
+            <div class="hero-content">
+                <span class="tag">System Builder</span>
+                <h1>AI Automation Engineer <br>& LLM Application Developer</h1>
+                <p class="hero-subtext">Building scalable AI workflows, internal assistants, and automation systems
+                    using LLMs, APIs, and orchestration tools.</p>
+                <div class="cta-group">
+                    <a href="https://github.com/Mahreen-Ahmed?tab=repositories" class="btn-primary">View Projects</a>
+                    <a href="Mahreen.pdf" class="btn-secondary" download>Download Resume <i
+                            class="fas fa-download"></i></a>
+                    <a href="https://github.com/Mahreen-Ahmed/" target="_blank" class="btn-icon"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+
+                <div class="workflow-animation">
+                    <div class="node node-start">Input</div>
+                    <div class="connector"></div>
+                    <div class="node node-process">LLM Processing</div>
+                    <div class="connector"></div>
+                    <div class="node node-end">Action</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about container section-padding">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">I design and build AI-powered automation systems, LLM-based assistants, and
+                        workflow-driven internal tools that improve business productivity.</p>
+                    <p>My journey started in frontend and backend development (3+ years), but I realized the future is
+                        in intelligent automation. I transitioned into AI to bridge the gap between traditional software
+                        engineering and the new wave of LLM capabilities.</p>
+                    <p>I don't just integrate APIs; I build production-ready systems that are reliable, cost-efficient,
+                        and scalable. From n8n workflows to complex RAG systems, I focus on solving real business
+                        problems.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills container section-padding">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI & LLM</h3>
+                    <ul>
+                        <li>OpenAI API</li>
+                        <li>RAG Systems</li>
+                        <li>Prompt Engineering</li>
+                        <li>Embeddings</li>
+                        <li>Vector DBs (Pinecone, Weaviate)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-network-wired"></i> Automation</h3>
+                    <ul>
+                        <li>n8n</li>
+                        <li>Webhooks</li>
+                        <li>Workflow Architecture</li>
+                        <li>Task Chaining</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend & Systems</h3>
+                    <ul>
+                        <li>REST APIs</li>
+                        <li>Authentication</li>
+                        <li>Data Pipelines</li>
+                        <li>Error Handling</li>
+                        <li>Scalability Logic</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <ul>
+                        <li>HTML5 / CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React / Next.js</li>
+                        <li>UI/UX for AI</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects container section-padding">
+            <h2 class="section-title">Featured Projects</h2>
+
+
+            <article class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>Llamingo</h3>
+                        <span class="project-type">Local LLM Chat Agent</span>
+                    </div>
+                    <p class="project-problem"><strong>Problem:</strong> Running powerful LLMs locally for
+                        privacy-sensitive tasks is restricted by poor UIs and lack of data protection features like PII
+                        stripping.</p>
+                    <p class="project-solution"><strong>Solution:</strong> A fast, privacy-first chat app for Ollama
+                        with real-time streaming, multi-model support, and PII detection via Presidio.</p>
+
+                    <div class="project-architecture">
+                        <h4>Architecture</h4>
+                        <div class="architecture-diagram">
+                            Next.js Client → Presidio Service (PII Check) → Ollama (Local Inference) → Supabase
+                            (History)
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <h4>Tech Stack</h4>
+                            <p>Next.js, TypeScript, Tailwind, Ollama, Docker, Supabase</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Impact</h4>
+                            <p>Enabled secure, offline AI coding sessions with zero data leak functionality.</p>
+                        </div>
+                        <div class="detail-item" style="grid-column: 1 / -1; margin-top: 10px;">
+                            <a href="https://github.com/Mahreen-Ahmed/Llamingo" target="_blank" class="btn-outline"
+                                style="font-size: 0.9rem;"><i class="fab fa-github"></i> View Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>AI-Powered Business Workflow Automation</h3>
+                        <span class="project-type">Automation Platform</span>
+                    </div>
+                    <p class="project-problem"><strong>Problem:</strong> Businesses struggle with fragmented data across
+                        multiple tools, leading to manual copy-pasting and slow reporting.</p>
+                    <p class="project-solution"><strong>Solution:</strong> An end-to-end automation system that triggers
+                        via webhooks, processes data with LLMs, and updates internal databases automatically.</p>
+
+                    <div class="project-architecture">
+                        <h4>Architecture</h4>
+                        <div class="architecture-diagram">
+                            Webhook → API Collection → LLM Processing → Structured Output → DB Storage → Auto-Report
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <h4>Tech Stack</h4>
+                            <p>n8n, OpenAI API, Node.js, PostgreSQL</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Impact</h4>
+                            <p>Reduced manual reporting time by 80%. handled 500+ daily workflows with <1% error rate>
+                                    . </1>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>Enterprise Knowledge Assistant (RAG)</h3>
+                        <span class="project-type">Internal Tool</span>
+                    </div>
+                    <p class="project-problem"><strong>Problem:</strong> Employees waste hours searching through
+                        thousands of PDF documents and internal wikis to find policy information.</p>
+                    <p class="project-solution"><strong>Solution:</strong> A RAG-based assistant that ingests company
+                        docs, embeds them, and provides accurate, cited answers to queries.</p>
+
+                    <div class="project-architecture">
+                        <h4>Architecture</h4>
+                        <div class="architecture-diagram">
+                            User Query → Embedding → Vector Search (Pinecone) → Context Retrieval → LLM → Answer +
+                            Citations
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <h4>Tech Stack</h4>
+                            <p>LangChain, OpenAI, Pinecone, Next.js, FastAPI</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Impact</h4>
+                            <p>Cut internal search time by 65%. Zero hallucination on policy questions due to strict
+                                context filtering.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>Multi-Step AI Task Agent</h3>
+                        <span class="project-type">Autonomous Agent</span>
+                    </div>
+                    <p class="project-problem"><strong>Problem:</strong> Simple chatbots cannot perform complex,
+                        multi-step actions like "Analyze this competitor and email me a report."</p>
+                    <p class="project-solution"><strong>Solution:</strong> An agentic system capable of breaking down
+                        high-level requests into sub-tasks (Research, Summarize, Format, Send).</p>
+
+                    <div class="project-architecture">
+                        <h4>Architecture</h4>
+                        <div class="architecture-diagram">
+                            Request → Task Planner → Tool Execution (Web Search, Doc Gen, Email) → Result Aggregation
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <h4>Tech Stack</h4>
+                            <p>Custom Agent Framework, SearxNG, Gmail API, Python</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Impact</h4>
+                            <p>Automated complex market research tasks, freeing up 15h/week for analysts.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <section id="methodology" class="methodology container section-padding">
+            <h2 class="section-title">How I Design AI Systems</h2>
+            <div class="methodology-grid">
+                <div class="method-card">
+                    <h3>Thinking in Workflows</h3>
+                    <p>I don't just write prompts. I map out the entire data flow, identifying decision nodes and
+                        potential failure points before coding.</p>
+                </div>
+                <div class="method-card">
+                    <h3>Focus an Reliability</h3>
+                    <p>AI is probabilistic. My systems include retry logic, validation layers, and human-in-the-loop
+                        fallback mechanisms.</p>
+                </div>
+                <div class="method-card">
+                    <h3>Cost & Token Optimization</h3>
+                    <p>I design generic prompts for cheaper models where possible and reserve high-intelligence models
+                        for complex reasoning tasks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="casestudies" class="casestudies container section-padding">
+            <h2 class="section-title">Case Studies</h2>
+            <div class="case-study-list">
+                <a href="#" class="case-study-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Designing AI Workflow Automation.pdf</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#" class="case-study-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Building RAG Systems in Production.pdf</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+
+        <section id="contact" class="contact container section-padding">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <p>Ready to build intelligent automation systems? Let's talk.</p>
+                <div class="contact-methods">
+                    <a href="https://wa.me/923130079447" target="_blank" class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+92 313 0079447</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer container">
+            <p>&copy; 2026 Mehreen Ahmed. Built with System Thinking.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mahreenahmed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Mahreen-Ahmed" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
